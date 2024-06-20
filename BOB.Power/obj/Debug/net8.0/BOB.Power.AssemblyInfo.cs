@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BOB.Power")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97cd4db8b13393a248542ba6933dc8f0c2f412b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BOB.Power")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BOB.Power")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

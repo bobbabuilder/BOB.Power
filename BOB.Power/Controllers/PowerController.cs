@@ -6,20 +6,20 @@ namespace BOB.Power.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class PowerController : ControllerBase
+public class PowerController(IPowerService powerService, ILogger<PowerController> logger)
+    : ControllerBase
 {
-    private readonly IPowerService _powerService;
-    private readonly ILogger<PowerController> _logger;
+    private readonly ILogger<PowerController> _logger = logger;
 
-    public PowerController(IPowerService powerService,ILogger<PowerController> logger)
-    {
-        _powerService = powerService;
-        _logger = logger;
-    }
-
-    [HttpGet(Name = "GetSpotPriceNow")]
+    [HttpGet("spot-price-now")]
     public IntervalPricing Get([FromQuery] Decimal poNumber)
     {
-               return _powerService.GetSpotPriceNow(poNumber);
+               return powerService.GetSpotPriceNow(poNumber);
     }
+    [HttpGet("average-spot-price-today")]
+    public IntervalPricing GetAvg([FromQuery] Decimal poNumber)
+    {
+        return powerService.GetAvgSpotPriceToday(poNumber);
+    }
+    
 }

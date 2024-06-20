@@ -32,3 +32,4 @@
 /Users/terjeheimvik/dev/BOB.Power/BOB.Power/obj/Debug/net8.0/ref/BOB.Power.dll
 /Users/terjeheimvik/dev/BOB.Power/BOB.Power/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/terjeheimvik/dev/BOB.Power/BOB.Power/bin/Debug/net8.0/Riok.Mapperly.Abstractions.dll
+/Users/terjeheimvik/dev/BOB.Power/BOB.Power/obj/Debug/net8.0/BOB.Power.sourcelink.json
